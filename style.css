@@ -1,0 +1,45 @@
+:root {
+  --primary: 0;
+  --complimentary: 0;
+}
+
+html {
+  background-color: #f9fafb;
+  color: black;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+}
+
+div {
+  border: 1px solid red;
+}
+
+.image {
+  width: 33%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(TODO);
+}
+
+.image-top {
+  flex: 1;
+}
+
+.image-bottom {
+  flex: 3;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main div {
+  flex: auto;
+}
