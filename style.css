@@ -9,6 +9,7 @@
 }
 
 html {
+  font-family: "Noto Sans", sans-serif;
   color: black;
 }
 
@@ -33,6 +34,7 @@ body {
 
 .image > h1 {
   position: relative;
+  font-family: "Caveat", cursive;
   background-color: rgba(var(--comp-dark), 0.5);
   color: rgba(var(--light-gray), 0.9);
   margin: 0;
