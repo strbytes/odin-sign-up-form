@@ -33,26 +33,23 @@ body {
 }
 
 .image > h1 {
-  position: relative;
   font-family: "Caveat", cursive;
+  font-size: 4rem;
   background-color: rgba(var(--comp-dark), 0.5);
   color: rgba(var(--light-gray), 0.9);
   margin: 0;
   padding: 1rem;
+  padding-right: 1.5rem;
   text-align: center;
+  vertical-align: middle;
 }
 
 .image > h1 > img {
-  display: inline;
   position: relative;
-  bottom: 3px;
-  height: 5rem;
-  vertical-align: middle;
+  top: 3px;
+  height: 3.5rem;
+  margin-right: 1rem;
   opacity: 0.9;
-}
-
-.image > h1 > span {
-  vertical-align: middle;
 }
 
 .image > div:first-child {
