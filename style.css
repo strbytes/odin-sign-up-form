@@ -1,10 +1,14 @@
 :root {
-  --primary: 0;
-  --complimentary: 0;
+  --primary: 214, 181, 46;
+  --prim-dark: 168, 112, 12;
+  --complimentary: 111, 143, 48;
+  --comp-dark: 50, 54, 20;
+  --light-gray: 248, 250, 252;
+  --gray: 219, 232, 239;
+  --dark-gray: 176, 185, 165;
 }
 
 html {
-  background-color: #f9fafb;
   color: black;
 }
 
@@ -13,10 +17,6 @@ body {
   height: 100vh;
   display: flex;
   margin: 0;
-}
-
-div {
-  /* border: 1px solid red; */
 }
 
 .image {
@@ -32,8 +32,8 @@ div {
 }
 
 .image > h1 {
-  background-color: rgba(18, 18, 30, 0.6);
-  color: #dfe1df;
+  background-color: rgba(var(--comp-dark), 0.5);
+  color: rgba(var(--light-gray), 0.8);
   margin: 0;
   padding: 1rem;
   text-align: center;
@@ -50,13 +50,14 @@ div {
   align-items: flex-end;
 }
 .image h4 {
+  color: rgba(var(--comp-dark), 1);
 }
 
 .main {
   flex: auto;
   display: flex;
   flex-direction: column;
-  background-color: #fffee9;
+  background-color: rgba(var(--primary), 0.15);
 }
 
 .main > div:first-child,
@@ -77,7 +78,7 @@ div {
 .main form {
   background-color: white;
   padding: 15px 35px 30px;
-  box-shadow: 0px -5px 20px #e9eaef, 0px 5px 20px #e9eaef;
+  box-shadow: 0px 5px 20px rgba(var(--prim-dark), 0.2);
 }
 
 .main form h2 {
