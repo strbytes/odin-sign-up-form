@@ -85,11 +85,14 @@ body {
 
 .main > div:first-child {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
   margin: 0 0 30px 35px;
 }
 
 .main > div:first-child h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .main form {
@@ -102,9 +105,42 @@ body {
   padding: 0;
   margin: 0 0 5px;
 }
+
 .main > div:last-child {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 30px 0 0 35px;
+}
+
+button {
+  appearance: none;
+  background-color: rgba(var(--comp-dark), 0.9);
+  color: rgb(var(--light-gray));
+  padding: 4px 12px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(var(--prim-dark), 0.4);
+  font-size: 1.3rem;
+}
+
+button:hover {
+  background-color: rgba(var(--comp-dark), 1);
+}
+
+button:active {
+  background-color: rgba(var(--comp-dark), 0.8);
+}
+
+h3 {
+  font-weight: 400;
+}
+
+a {
+  font-weight: 600;
+  color: rgb(var(--complimentary));
+}
+
+a:visited {
+  color: rgb(var(--comp-dark));
 }
