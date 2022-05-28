@@ -16,7 +16,7 @@ body {
 }
 
 div {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .image {
@@ -59,6 +59,34 @@ div {
   background-color: #fffee9;
 }
 
-.main div {
+.main > div:first-child,
+.main > div:last-child {
   flex: auto;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.main > div:first-child {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 30px 35px;
+}
+
+.main > div:first-child h2 {
+}
+
+.main form {
+  background-color: white;
+  padding: 15px 35px 30px;
+  box-shadow: 0px -5px 20px #e9eaef, 0px 5px 20px #e9eaef;
+}
+
+.main form h2 {
+  padding: 0;
+  margin: 0 0 5px;
+}
+.main > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 30px 0 0 35px;
 }
