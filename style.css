@@ -32,11 +32,25 @@ body {
 }
 
 .image > h1 {
+  position: relative;
   background-color: rgba(var(--comp-dark), 0.5);
-  color: rgba(var(--light-gray), 0.8);
+  color: rgba(var(--light-gray), 0.9);
   margin: 0;
   padding: 1rem;
   text-align: center;
+}
+
+.image > h1 > img {
+  display: inline;
+  position: relative;
+  bottom: 3px;
+  height: 5rem;
+  vertical-align: middle;
+  opacity: 0.9;
+}
+
+.image > h1 > span {
+  vertical-align: middle;
 }
 
 .image > div:first-child {
