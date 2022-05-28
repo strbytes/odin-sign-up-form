@@ -59,11 +59,15 @@ body {
 .image > div:last-child {
   flex: 2;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end;
 }
-.image h4 {
+.image > div:last-child > h4 {
+  background-color: rgba(var(--light-gray), 0.3);
+  padding: 0 3px;
+  margin: 0;
   color: rgba(var(--comp-dark), 1);
+  font-size: 0.8rem;
 }
 
 .main {
