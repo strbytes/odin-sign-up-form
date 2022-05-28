@@ -20,24 +20,43 @@ div {
 }
 
 .image {
-  width: 33%;
-  max-width: 500px;
+  width: 40%;
+  max-width: 683px;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
-  background-image: url(TODO);
+  background-image: url("rose.jpg");
+  background-origin: border-box;
+  background-position: top center;
+  position: relative;
 }
 
-.image-top {
+.image > h1 {
+  background-color: rgba(18, 18, 30, 0.6);
+  color: #dfe1df;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.image > div:first-child {
   flex: 1;
 }
 
-.image-bottom {
-  flex: 3;
+.image > div:last-child {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.image h4 {
 }
 
 .main {
+  flex: auto;
   display: flex;
   flex-direction: column;
+  background-color: #fffee9;
 }
 
 .main div {
