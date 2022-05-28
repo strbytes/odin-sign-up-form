@@ -32,21 +32,35 @@
           <strong>Sign up now to get started.</strong> You know you want to.
         </h2>
       </div>
-      <form action="#">
+      <form action="#" id="signup">
         <h2>Let's do this!</h2>
         <div>
-          <label for=""><input type="" /></label>
-          <label for=""><input type="" /></label>
-          <br />
-          <label for=""><input type="" /></label>
-          <label for=""><input type="" /></label>
-          <br />
-          <label for=""><input type="" /></label>
-          <label for=""><input type="" /></label>
+          <label for="firstName"
+            >FIRST NAME<input type="text" id="firstName" required
+          /></label>
+          <label for="lastName"
+            >LAST NAME<br /><input type="text" id="lastName" required
+          /></label>
+        </div>
+        <div>
+          <label for="email"
+            >EMAIL ADDRESS<br /><input type="email" id="email" required
+          /></label>
+          <label for="phoneNumber"
+            >PHONE NUMBER<input type="tel" id="phoneNumber"
+          /></label>
+        </div>
+        <div>
+          <label for="password"
+            >PASSWORD<input type="password" id="password" required
+          /></label>
+          <label for="confirmPass"
+            >CONFIRM PASSWORD<input type="password" id="confirmPass" required
+          /></label>
         </div>
       </form>
       <div>
-        <button>Create Account</button>
+        <button type="submit" form="signup">Create Account</button>
         <h3>Already have an account? <a href="#">Log in</a></h3>
       </div>
     </div>
