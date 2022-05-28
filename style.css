@@ -32,7 +32,7 @@ body {
   position: relative;
 }
 
-.image > h1 {
+h1 {
   font-family: "Caveat", cursive;
   font-size: 4rem;
   background-color: rgba(var(--comp-dark), 0.5);
@@ -44,7 +44,7 @@ body {
   vertical-align: middle;
 }
 
-.image > h1 > img {
+h1 > img {
   position: relative;
   top: 3px;
   height: 3.5rem;
@@ -62,7 +62,8 @@ body {
   justify-content: flex-start;
   align-items: flex-end;
 }
-.image > div:last-child > h4 {
+
+h4 {
   background-color: rgba(var(--light-gray), 0.3);
   padding: 0 3px;
   margin: 0;
@@ -90,18 +91,18 @@ body {
   margin: 0 0 30px 35px;
 }
 
-.main > div:first-child h2 {
+h2 {
   font-size: 1.2rem;
   font-weight: 400;
 }
 
-.main form {
+form {
   background-color: white;
   padding: 15px 35px 30px;
   box-shadow: 0px 5px 20px rgba(var(--prim-dark), 0.2);
 }
 
-.main form h2 {
+form h2 {
   padding: 0;
   margin: 0 0 5px;
 }
