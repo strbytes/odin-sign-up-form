@@ -55,12 +55,15 @@
             >PASSWORD<input type="password" id="password" required
           /></label>
           <label for="confirmPass"
-            >CONFIRM PASSWORD<input type="password" id="confirmPass" required
+            ><span id="passWarning"></span>CONFIRM PASSWORD<input
+              type="password"
+              id="confirmPass"
+              required
           /></label>
         </div>
       </form>
       <div>
-        <button type="submit" form="signup">Create Account</button>
+        <button id="submit">Create Account</button>
         <h3>Already have an account? <a href="#">Log in</a></h3>
       </div>
     </div>

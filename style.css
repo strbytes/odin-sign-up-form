@@ -151,6 +151,26 @@ input:focus {
   outline: 0;
 }
 
+#passWarning {
+  position: relative;
+  visibility: hidden;
+}
+
+#passWarning::after {
+  content: "Passwords do not match";
+  position: absolute;
+  top: 40px;
+  width: 150px;
+  color: red;
+  font-size: 0.7rem;
+}
+
+.error {
+  /* class for script.js to indicate password fields don't match */
+  background-color: rgba(255, 0, 0, 0.2);
+  border-color: red;
+}
+
 button {
   background-color: rgba(var(--comp-dark), 0.9);
   color: rgb(var(--light-gray));
