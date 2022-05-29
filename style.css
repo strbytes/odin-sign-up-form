@@ -171,6 +171,38 @@ input:focus {
   border-color: red;
 }
 
+label[for="showPass"] {
+  font-size: 0.7rem;
+  position: relative;
+  top: -10px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  border: 1px solid rgb(var(--gray));
+  vertical-align: -4px;
+}
+
+input[type="checkbox"]::before {
+  position: absolute;
+  content: "x";
+  color: rgb(var(--off-black));
+  top: -5px;
+  left: 0.1rem;
+  visibility: hidden;
+}
+
+input[type="checkbox"]:focus::before {
+  background-color: rgba(var(--primary), 0.05);
+  border: 1px solid rgb(var(--comp-dark), 0.5);
+}
+
+input[type="checkbox"]:checked::before {
+  visibility: visible;
+}
+
 button {
   background-color: rgba(var(--comp-dark), 0.9);
   color: rgb(var(--light-gray));
