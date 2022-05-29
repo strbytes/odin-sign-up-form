@@ -31,6 +31,7 @@ body {
   background-image: url("rose.jpg");
   background-origin: border-box;
   background-position: top center;
+  background-size: cover;
   position: relative;
 }
 
